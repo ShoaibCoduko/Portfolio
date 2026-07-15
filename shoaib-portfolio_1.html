@@ -3,10 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Shoaib Ahmad | Frontend &amp; WordPress Developer</title>
-<meta name="description" content="Frontend and WordPress developer building modern, responsive websites and web apps with clear design and practical results." />
-<link rel="icon" type="image/png" href="Image/faviconlogo.png" />
-<link rel="apple-touch-icon" href="Image/faviconlogo.png" />
+<title>Shoaib Ahmad — Frontend &amp; WordPress Developer</title>
+<meta name="description" content="Portfolio of Shoaib Ahmad, a frontend and WordPress developer based in Lahore, Pakistan, building responsive, user-friendly web applications." />
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,15 +16,15 @@
     theme: {
       extend: {
         colors: {
-          bg:      '#F6F6FD',
-          surface: '#F4F5FC',
-          surface2:'#FFFFFF',
-          line:    '#0F1F46',
-          ink:     '#0F1F46',
-          muted:   '#4F5F7A',
-          faint:   '#7A859A',
-          accent:  '#BE0107',
-          accent2: '#0F1F46',
+          bg:      '#100F1A',
+          surface: '#181626',
+          surface2:'#221F33',
+          line:    '#2E2A40',
+          ink:     '#EDEBF5',
+          muted:   '#9B96B0',
+          faint:   '#6E6883',
+          accent:  '#8B7DF6',
+          accent2: '#4FE0C0',
         },
         fontFamily: {
           display: ['"Space Grotesk"', 'sans-serif'],
@@ -39,21 +37,21 @@
 </script>
 
 <style>
-  html, body { background: #F6F6FD; }
-  body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; color: #0F1F46; }
+  html, body { background: #100F1A; }
+  body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
 
   /* ambient grid + glow behind hero */
   .grid-bg {
     background-image:
-      linear-gradient(#0F1F4622 1px, transparent 1px),
-      linear-gradient(90deg, #0F1F4622 1px, transparent 1px);
+      linear-gradient(#2E2A4033 1px, transparent 1px),
+      linear-gradient(90deg, #2E2A4033 1px, transparent 1px);
     background-size: 56px 56px;
     -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
             mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
   }
   .glow {
-    background: radial-gradient(circle at 30% 20%, #BE010755, transparent 55%),
-                radial-gradient(circle at 75% 30%, #0F1F4633, transparent 50%);
+    background: radial-gradient(circle at 30% 20%, #8B7DF655, transparent 55%),
+                radial-gradient(circle at 75% 30%, #4FE0C033, transparent 50%);
     filter: blur(20px);
   }
 
@@ -78,7 +76,7 @@
 
   /* nav underline */
   .navlink { position: relative; }
-  .navlink::after { content:''; position:absolute; left:0; bottom:-4px; height:1.5px; width:0; background:#BE0107; transition:width .3s ease; }
+  .navlink::after { content:''; position:absolute; left:0; bottom:-4px; height:1.5px; width:0; background:#8B7DF6; transition:width .3s ease; }
   .navlink:hover::after { width:100%; }
 
   @media (prefers-reduced-motion: reduce) {
@@ -94,15 +92,16 @@
 <!-- ================= NAV ================= -->
 <header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-bg/70 border-b border-line/60">
   <nav class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
-    <a href="#top" class="flex items-center gap-2 group" aria-label="Shoaib home">
-      <img src="Image/sho3dlogo.png" alt="Shoaib logo" class="h-14 w-auto object-contain" />
+    <a href="#top" class="font-mono text-sm text-ink flex items-center gap-2 group">
+      <span class="text-accent">$</span>
+      <span class="font-semibold tracking-tight">shoaib<span class="text-accent2">.dev</span></span>
     </a>
     <div class="hidden md:flex items-center gap-8 font-mono text-[13px] text-muted">
-      <a href="#about"    class="navlink hover:text-ink transition">About</a>
-      <a href="#skills"   class="navlink hover:text-ink transition">Skills</a>
-      <a href="#work"     class="navlink hover:text-ink transition">Work</a>
-      <a href="#path"     class="navlink hover:text-ink transition">Path</a>
-      <a href="#contact"  class="navlink hover:text-ink transition">Contact</a>
+      <a href="#about"    class="navlink hover:text-ink transition">~/about</a>
+      <a href="#skills"   class="navlink hover:text-ink transition">~/skills</a>
+      <a href="#work"     class="navlink hover:text-ink transition">~/work</a>
+      <a href="#path"     class="navlink hover:text-ink transition">~/path</a>
+      <a href="#contact"  class="navlink hover:text-ink transition">~/contact</a>
     </div>
     <a href="#contact" class="hidden md:inline-flex font-mono text-[13px] px-4 py-2 rounded-full border border-accent/50 text-accent hover:bg-accent hover:text-bg transition">Get in touch</a>
 
@@ -113,11 +112,11 @@
   <!-- mobile menu -->
   <div id="mobileMenu" class="md:hidden hidden border-t border-line/60 bg-bg/95 backdrop-blur">
     <div class="px-6 py-4 flex flex-col gap-4 font-mono text-sm text-muted">
-      <a href="#about"   class="mobile-nav hover:text-ink">About</a>
-      <a href="#skills"  class="mobile-nav hover:text-ink">Skills</a>
-      <a href="#work"    class="mobile-nav hover:text-ink">Work</a>
-      <a href="#path"    class="mobile-nav hover:text-ink">Path</a>
-      <a href="#contact" class="mobile-nav hover:text-ink">Contact</a>
+      <a href="#about"   class="mobile-nav hover:text-ink">~/about</a>
+      <a href="#skills"  class="mobile-nav hover:text-ink">~/skills</a>
+      <a href="#work"    class="mobile-nav hover:text-ink">~/work</a>
+      <a href="#path"    class="mobile-nav hover:text-ink">~/path</a>
+      <a href="#contact" class="mobile-nav hover:text-ink">~/contact</a>
     </div>
   </div>
 </header>
@@ -128,8 +127,8 @@
   <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[680px] h-[420px] glow pointer-events-none opacity-70"></div>
 
   <div class="relative max-w-6xl mx-auto px-5 sm:px-8">
-    <p class="rise font-mono text-[13px] text-[#BE0107] mb-6" style="animation-delay:.05s">
-        Hello, I’m a frontend and WordPress developer building modern, responsive websites and web apps.
+    <p class="rise font-mono text-[13px] text-accent2 mb-6" style="animation-delay:.05s">
+      // frontend engineer — Lahore, Pakistan
     </p>
 
     <h1 class="rise font-display font-bold tracking-tight leading-[0.95] text-5xl sm:text-7xl md:text-8xl" style="animation-delay:.15s">
@@ -141,14 +140,20 @@
     </div>
 
     <p class="rise mt-8 max-w-2xl text-muted text-base sm:text-lg leading-relaxed" style="animation-delay:.4s">
-      I create modern, responsive websites and digital experiences that combine strong visual design with clean code, practical functionality, and lasting user value.
+      Frontend &amp; WordPress developer with 3+ years designing, building, and
+      maintaining modern, responsive web applications — clean code, thoughtful
+      interfaces, and solutions built around real business goals.
     </p>
 
     <div class="rise mt-10 flex flex-wrap items-center gap-4" style="animation-delay:.52s">
-      <a href="#work" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-white font-medium hover:bg-[#a10006] transition">
-        Explore my work
+      <a href="#work" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-bg font-medium hover:bg-accent2 transition">
+        View my work
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>  
+      </a>
+      <a href="https://github.com/ShoaibCoduko" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-line text-muted hover:text-ink hover:border-accent/50 transition font-mono text-sm">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.3c0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.2-4.6-5.1 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.6 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.4 6.8-5.2 6.8-9.7C22 6.6 17.5 2 12 2Z"/></svg>
+        GitHub
+      </a>
     </div>
   </div>
 </section>
@@ -156,25 +161,31 @@
 <!-- ================= ABOUT ================= -->
 <section id="about" class="relative py-20 sm:py-28 border-t border-line/50">
   <div class="max-w-6xl mx-auto px-5 sm:px-8">
-    <p class="reveal font-mono text-sm text-accent mb-3">About</p>
+    <p class="reveal font-mono text-sm text-accent mb-3">~/about</p>
     <div class="grid md:grid-cols-[1.4fr_1fr] gap-12 md:gap-16 items-start">
       <div class="reveal">
         <h2 class="font-display text-3xl sm:text-4xl font-semibold tracking-tight mb-6">
-          I build digital experiences that feel polished, purposeful, and effortless to use.
+          I build interfaces people actually enjoy using.
         </h2>
         <div class="space-y-4 text-muted leading-relaxed">
           <p>
-            I’m a frontend and WordPress developer focused on creating websites and web apps that are visually refined, responsive, and built around real user needs.
+            I'm a dedicated frontend and WordPress developer based in Lahore, Pakistan.
+            Over the last three years I've designed, developed, and maintained modern,
+            responsive web applications across healthcare, corporate, consultancy, and
+            enterprise dashboard projects.
           </p>
           <p>
-            My work includes business websites, service platforms, dashboards, and custom interface solutions built with WordPress, Elementor, ReactJS, Tailwind CSS, Bootstrap, Laravel, PHP, and Oracle APEX.
+            My work spans custom WordPress builds with Elementor, hand-coded HTML/CSS/JS
+            interfaces, ReactJS front ends, and heavily customized Oracle APEX
+            applications — always with an eye on clean code, smooth navigation, and
+            mobile-first design.
           </p>
         </div>
 
         <div class="mt-8 flex flex-wrap gap-3 font-mono text-[13px]">
           <span class="px-3 py-1.5 rounded-md bg-surface border border-line text-muted">🎓 BS Computer Science</span>
           <span class="px-3 py-1.5 rounded-md bg-surface border border-line text-muted">🗣 Urdu &amp; English</span>
-          <span class="px-3 py-1.5 rounded-md bg-surface border border-line text-muted">💡 UI &amp; Web Focus</span>
+          <span class="px-3 py-1.5 rounded-md bg-surface border border-line text-muted">📚 Reading &amp; Web Dev</span>
         </div>
       </div>
 
@@ -204,8 +215,8 @@
 <!-- ================= SKILLS ================= -->
 <section id="skills" class="relative py-20 sm:py-28 border-t border-line/50">
   <div class="max-w-6xl mx-auto px-5 sm:px-8">
-    <p class="reveal font-mono text-sm text-accent mb-3">Skills</p>
-    <h2 class="reveal font-display text-3xl sm:text-4xl font-semibold tracking-tight mb-12">Core strengths</h2>
+    <p class="reveal font-mono text-sm text-accent mb-3">~/skills</p>
+    <h2 class="reveal font-display text-3xl sm:text-4xl font-semibold tracking-tight mb-12">Tools of the trade</h2>
 
     <div class="grid sm:grid-cols-3 gap-6">
       <!-- group -->
@@ -254,10 +265,10 @@
 <!-- ================= WORK ================= -->
 <section id="work" class="relative py-20 sm:py-28 border-t border-line/50">
   <div class="max-w-6xl mx-auto px-5 sm:px-8">
-    <p class="reveal font-mono text-sm text-accent mb-3">Work</p>
+    <p class="reveal font-mono text-sm text-accent mb-3">~/work</p>
     <div class="reveal flex flex-wrap items-end justify-between gap-4 mb-12">
-      <h2 class="font-display text-3xl sm:text-4xl font-semibold tracking-tight text-[#0F1F46]">Selected projects</h2>
-      <span class="font-mono text-sm text-[#7A859A]">9 launches · web, WordPress, and APEX</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold tracking-tight">Selected projects</h2>
+      <span class="font-mono text-sm text-faint">9 builds · frontend + WordPress + APEX</span>
     </div>
 
     <div id="projectGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
@@ -267,30 +278,30 @@
 <!-- ================= PATH (experience + education) ================= -->
 <section id="path" class="relative py-20 sm:py-28 border-t border-line/50">
   <div class="max-w-6xl mx-auto px-5 sm:px-8">
-    <p class="reveal font-mono text-sm text-accent mb-3">Path</p>
-    <h2 class="reveal font-display text-3xl sm:text-4xl font-semibold tracking-tight mb-12 text-[#0F1F46]">Experience &amp; education</h2>
+    <p class="reveal font-mono text-sm text-accent mb-3">~/path</p>
+    <h2 class="reveal font-display text-3xl sm:text-4xl font-semibold tracking-tight mb-12">Experience &amp; education</h2>
 
     <div class="space-y-5">
-      <div class="reveal rounded-[24px] bg-[#F6F6FD] border border-[#0F1F46]/10 p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 shadow-[0_12px_35px_rgba(15,31,70,0.08)]">
-        <div class="font-mono text-sm text-[#BE0107] sm:w-40 shrink-0">Software Engineer</div>
+      <div class="reveal rounded-2xl bg-surface border border-line p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+        <div class="font-mono text-sm text-accent2 sm:w-40 shrink-0">Software Engineer</div>
         <div class="flex-1">
-          <h3 class="font-display text-xl font-semibold text-[#0F1F46]">Frontend Developer</h3>
-          <p class="text-[#4F5F7A] text-sm mt-1 leading-relaxed">
-            Building responsive, user-focused web solutions using Bootstrap, Tailwind CSS,
-            WordPress, Oracle APEX, ReactJS, Laravel, and PHP — with a strong emphasis on
-            thoughtful design and reliable performance.
+          <h3 class="font-display text-xl font-semibold">Frontend Developer</h3>
+          <p class="text-muted text-sm mt-1 leading-relaxed">
+            Custom responsive web design and development using Bootstrap, Tailwind CSS,
+            WordPress, Oracle APEX, ReactJS, Laravel, and PHP — delivering clean, modern,
+            user-friendly solutions.
           </p>
         </div>
-        <div class="font-mono text-xs text-[#7A859A] sm:text-right shrink-0">Lahore, PK</div>
+        <div class="font-mono text-xs text-faint sm:text-right shrink-0">Lahore, PK</div>
       </div>
 
-      <div class="reveal rounded-[24px] bg-[#F4F5FC] border border-[#0F1F46]/10 p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 shadow-[0_12px_35px_rgba(15,31,70,0.06)]">
-        <div class="font-mono text-sm text-[#BE0107] sm:w-40 shrink-0">Education</div>
+      <div class="reveal rounded-2xl bg-surface border border-line p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+        <div class="font-mono text-sm text-accent2 sm:w-40 shrink-0">Education</div>
         <div class="flex-1">
-          <h3 class="font-display text-xl font-semibold text-[#0F1F46]">Bachelor of Computer Science</h3>
-          <p class="text-[#4F5F7A] text-sm mt-1">Virtual University of Pakistan</p>
+          <h3 class="font-display text-xl font-semibold">Bachelor of Computer Science</h3>
+          <p class="text-muted text-sm mt-1">Virtual University of Pakistan</p>
         </div>
-        <div class="font-mono text-xs text-[#7A859A] sm:text-right shrink-0">Lahore, PK</div>
+        <div class="font-mono text-xs text-faint sm:text-right shrink-0">Lahore, PK</div>
       </div>
     </div>
   </div>
@@ -300,93 +311,27 @@
 <section id="contact" class="relative py-20 sm:py-28 border-t border-line/50 overflow-hidden">
   <div class="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[680px] h-[420px] glow pointer-events-none opacity-60"></div>
   <div class="relative max-w-6xl mx-auto px-5 sm:px-8 text-center">
-    <p class="reveal font-mono text-sm text-accent mb-4">Contact</p>
+    <p class="reveal font-mono text-sm text-accent mb-4">~/contact</p>
     <h2 class="reveal font-display text-4xl sm:text-6xl font-bold tracking-tight leading-tight">
-      Let’s create something<br class="hidden sm:block" /> <span class="text-accent">clear, fast, and modern.</span>
+      Let's build something<br class="hidden sm:block" /> <span class="text-accent">clean &amp; responsive.</span>
     </h2>
     <p class="reveal mt-6 text-muted max-w-xl mx-auto">
-      Open to frontend, WordPress, and web application projects for businesses, startups, and growing teams.
+      Open to frontend, WordPress, and Oracle APEX work. Drop a line and I'll get back to you.
     </p>
 
     <div class="reveal mt-10 flex flex-wrap justify-center gap-4">
-      <a href="#cv" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-white font-medium hover:bg-[#a10006] transition">
+      <a href="mailto:shoaibahmad6342@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-bg font-medium hover:bg-accent2 transition">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
-        View profile
+        shoaibahmad6342@gmail.com
       </a>
-      <a href="#work" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-line text-muted hover:text-ink hover:border-accent/50 transition font-mono text-sm">
-        Available for collaboration
+      <a href="tel:+923446342205" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-line text-muted hover:text-ink hover:border-accent/50 transition font-mono text-sm">
+        +92 344 6342205
       </a>
     </div>
 
-  </div>
-</section>
-
-<!-- ================= CV / RESUME ================= -->
-<section id="cv" class="relative py-20 sm:py-28 border-t border-line/50">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8">
-    <div class="reveal rounded-[32px] border border-[#0F1F46]/10 bg-white p-6 shadow-[0_22px_60px_rgba(15,31,70,0.12)]">
-      <div class="flex flex-col lg:flex-row gap-8">
-        <div class="lg:w-[28%]">
-          <div class="rounded-[24px] bg-transparent p-5 flex items-center justify-center">
-            <img src="Image/sho3dlogo.png" alt="Brand logo" class="max-h-24 w-auto object-contain" />
-          </div>
-
-          <div class="mt-4 rounded-[20px] border border-[#0F1F46]/10 bg-[#F4F5FC] p-5">
-            <p class="font-mono text-[11px] uppercase tracking-[0.24em] text-[#BE0107]">Summary</p>
-            <p class="mt-3 text-sm leading-relaxed text-[#0F1F46]/80">
-              Skilled in crafting responsive, modern, and user-friendly digital experiences for web and WordPress projects.
-            </p>
-          </div>
-        </div>
-
-        <div class="flex-1">
-          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-            <div>
-              <p class="font-mono text-[11px] uppercase tracking-[0.24em] text-[#BE0107]">CV / Resume</p>
-              <h3 class="mt-2 font-display text-3xl sm:text-4xl font-semibold text-[#0F1F46]">Professional Profile</h3>
-              <p class="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-[#0F1F46]/80">
-                Software engineer focused on frontend development, WordPress solutions, and polished web interfaces built with Bootstrap, Tailwind CSS, ReactJS, PHP, Laravel, and Oracle APEX.
-              </p>
-            </div>
-           </div>
-
-          <div class="mt-8 grid gap-4 md:grid-cols-2">
-            <div class="rounded-[20px] border border-[#0F1F46]/10 bg-white/80 p-5">
-              <h4 class="font-display text-lg font-semibold text-[#0F1F46]">Experience</h4>
-              <p class="mt-2 text-sm leading-relaxed text-[#0F1F46]/75">
-                Frontend developer and software engineer with experience in responsive websites, custom UI work, and CMS-based builds.
-              </p>
-            </div>
-            <div class="rounded-[20px] border border-[#0F1F46]/10 bg-white/80 p-5">
-              <h4 class="font-display text-lg font-semibold text-[#0F1F46]">Education</h4>
-              <p class="mt-2 text-sm leading-relaxed text-[#0F1F46]/75">
-                Bachelor of Computer Science from Virtual University of Pakistan.
-              </p>
-            </div>
-            <div class="rounded-[20px] border border-[#0F1F46]/10 bg-white/80 p-5">
-              <h4 class="font-display text-lg font-semibold text-[#0F1F46]">Skills</h4>
-              <p class="mt-2 text-sm leading-relaxed text-[#0F1F46]/75">
-                WordPress, Tailwind CSS, ReactJS, Bootstrap, PHP, Oracle APEX, SQL, JavaScript.
-              </p>
-            </div>
-            <div class="rounded-[20px] border border-[#0F1F46]/10 bg-white/80 p-5">
-              <h4 class="font-display text-lg font-semibold text-[#0F1F46]">Focus</h4>
-              <p class="mt-2 text-sm leading-relaxed text-[#0F1F46]/75">
-                Clean layouts, modern UI, responsive design, and dependable development for business and client-facing products.
-              </p>
-            </div>
-          </div>
-
-          <div class="mt-6 flex flex-wrap gap-3">
-            <span class="inline-flex items-center rounded-full bg-[#BE0107] px-5 py-2.5 text-sm font-semibold text-white">
-              Open for opportunities
-            </span>
-            <span class="inline-flex items-center rounded-full border border-[#0F1F46]/15 px-5 py-2.5 text-sm font-semibold text-[#0F1F46]">
-              Available for freelance and full-time work
-            </span>
-          </div>
-        </div>
-      </div>
+    <div class="reveal mt-8 flex justify-center gap-6 font-mono text-sm text-muted">
+      <a href="https://github.com/ShoaibCoduko" target="_blank" rel="noopener" class="navlink hover:text-ink transition">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/shoaib-ahmad-b007b3178" target="_blank" rel="noopener" class="navlink hover:text-ink transition">LinkedIn ↗</a>
     </div>
   </div>
 </section>
@@ -394,11 +339,8 @@
 <!-- ================= FOOTER ================= -->
 <footer class="border-t border-line/50 py-8">
   <div class="max-w-6xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 font-mono text-xs text-faint">
-    <div class="flex items-center gap-3">
-      <img src="Image/sho3dlogo.png" alt="Shoaib logo" class="h-8 w-auto object-contain" />
-      <span>© <span id="year"></span> Shoaib Ahmad — Lahore, Pakistan</span>
-    </div>
-    <span>Built with Tailwind CSS · crafted for modern web experiences</span>
+    <span>© <span id="year"></span> Shoaib Ahmad — Lahore, Pakistan</span>
+    <span>Built with Tailwind CSS · designed &amp; coded by Shoaib</span>
   </div>
 </footer>
 
@@ -448,7 +390,7 @@
   const grid = document.getElementById('projectGrid');
   projects.forEach((p, i) => {
     const el = document.createElement('article');
-    el.className = 'card reveal group rounded-2xl bg-surface border border-line bg-white hover:border-accent/50 p-6 flex flex-col';
+    el.className = 'card reveal group rounded-2xl bg-surface border border-line hover:border-accent/50 p-6 flex flex-col';
     el.style.transitionDelay = (i % 3) * 0.06 + 's';
     el.innerHTML = `
       <div class="flex items-center justify-between mb-4">
@@ -456,9 +398,9 @@
         <span class="font-mono text-xs text-faint">0${i+1}</span>
       </div>
       <h3 class="font-display text-xl font-semibold group-hover:text-accent transition">${p.title}</h3>
-      <p class="mt-3 text-sm text-[#7A859A] leading-relaxed flex-1">${p.desc}</p>
+      <p class="mt-3 text-sm text-muted leading-relaxed flex-1">${p.desc}</p>
       <div class="mt-5 flex flex-wrap gap-2">
-        ${p.tech.map(t => `<span class="font-mono text-[12px] text-[#7A859A] text-faint px-2 py-0.5 rounded bg-surface2">${t}</span>`).join('')}
+        ${p.tech.map(t => `<span class="font-mono text-[11px] text-faint px-2 py-0.5 rounded bg-surface2">${t}</span>`).join('')}
       </div>`;
     grid.appendChild(el);
   });
